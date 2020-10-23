@@ -28,9 +28,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDyFCZX4gauYeB5r6lRJPaLXqtwOUvYLpk" />
-        <activity android:name="com.Pie4u.animalcare.MapActivity"></activity>
+        <activity android:name="com.Pie4u.animalcare.MapActivity"/>
         <activity android:name="com.Pie4u.animalcare.PhoneVerificationActivity" />
-        <activity android:name="com.Pie4u.animalcare.RescueSignUpActivity" android:theme="@style/splashTheme" />
+        <activity android:name="com.Pie4u.animalcare.RescueSignUpActivity" android:theme="@style/AppTheme"/>
         <activity
             android:name="com.Pie4u.animalcare.MainActivity"
             android:theme="@style/splashTheme1" />
@@ -38,7 +38,7 @@
         <activity android:name="com.Pie4u.animalcare.RescueActivity" android:theme="@style/splashTheme1"/>
         <activity
             android:name="com.Pie4u.animalcare.AnimalRescueLoginActivity"
-            android:theme="@style/splashTheme1" />
+            android:theme="@style/AppTheme" />
         <activity android:name="com.Pie4u.animalcare.CreatePostActivity" />
         <activity android:name="com.Pie4u.animalcare.HomeActivity" android:theme="@style/splashTheme1" />
         <activity
