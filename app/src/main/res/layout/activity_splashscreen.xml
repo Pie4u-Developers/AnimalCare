@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundsplash"
+    android:background="@drawable/wallpaper"
     tools:context=".splashscreen">
 
     <TextView
@@ -16,7 +16,9 @@
         android:layout_marginTop="105dp"
         android:text="AniCare"
         android:textColor="#FFFFFF"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+
+        android:shadowRadius="2"/>
 
     <ImageView
         android:id="@+id/logo"
@@ -24,8 +26,8 @@
         android:layout_height="118dp"
         android:layout_below="@+id/titletext"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="30dp"
         android:src="@drawable/moti" />
 
     <TextView
@@ -33,22 +35,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/pie4u"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="60dp"
         android:layout_centerHorizontal="true"
-        android:text="For A \nBetter World\nBetter US"
+        android:text="For a\nBetter world,\nBetter us"
+
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+
+        android:shadowRadius="2"
+        />
     <TextView
         android:id="@+id/pie4u"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:layout_marginBottom="80dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="68dp"
         android:layout_centerHorizontal="true"
-        android:text="BY PIE4U"/>
+        android:shadowRadius="2"
+
+        android:text="By PIE4U"/>
 
     <ProgressBar
         android:id="@+id/progressBar"

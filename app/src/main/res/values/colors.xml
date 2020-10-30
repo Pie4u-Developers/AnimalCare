@@ -10,5 +10,7 @@
     <color name="Green">#32CD32</color>
     <color name="Orange">#FF9933</color>
     <color name="holoBlueDark">#ff0099cc</color>
-    <color name="colorBackground">#ffe082</color>
+    <color name="colorBackground">#ffdab5</color>
+    <color name="cardlight">#FFf3e0</color>
+    <color name="linescol">#EEE2D0</color>
 </resources>

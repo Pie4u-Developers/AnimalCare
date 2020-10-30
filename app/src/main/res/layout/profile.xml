@@ -1,88 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:alpha=".9"-->
+<!--    android:background="@drawable/feedb">-->
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/profileI"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="55dp"-->
+<!--        android:src="@drawable/dogprofile"-->
+<!--        app:civ_border_color="#000000"-->
+<!--        app:civ_border_width="2dp" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_below="@id/profileI"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginVertical="30dp">-->
+
+
+
+
+
+
+<!--    </LinearLayout>-->
+
+
+
+
+<!--</RelativeLayout>-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:alpha=".9"
-    android:background="@drawable/feedb">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="6dp">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profileI"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:src="@drawable/dogprofile"
-        app:civ_border_color="#000000"
-        app:civ_border_width="2dp" />
 
-    <LinearLayout
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/profileI"
-        android:gravity="center"
-        android:layout_marginVertical="30dp">
-
-        <TextView
-            android:id="@+id/namet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:ems="10"
-            android:textAlignment="center"
-            android:fontFamily="@font/aldrich"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text=""/>
-
-        <TextView
-            android:id="@+id/aboutt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:ems="10"
-            android:textAlignment="center"
-            android:fontFamily="@font/aldrich"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text=""/>
-
-        <TextView
-            android:id="@+id/contactt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:fontFamily="@font/aldrich"
-            android:ems="10"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text=""/>
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/cardlight"
+        >
 
 
-    <Button
-        android:id="@+id/Editbtn"
-        android:layout_width="119dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="285dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="6dp"
-        android:background="@drawable/bluebtn"
-        android:textAllCaps="false"
-        android:text="Edit" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="6dp"
+            >
 
-</RelativeLayout>
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                app:civ_border_color="#EEE2D0"
+                app:civ_border_width="2dp"
+                android:src="@drawable/dogprofile"
+                android:id="@+id/profileI"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name:"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/namet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="name"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEE2D0"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="about:"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/aboutt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="About"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEE2D0"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+               />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="contact:"
+                android:layout_marginLeft="40dp"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/contactt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="contact"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEE2D0"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginRight="64dp"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Editbtn"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

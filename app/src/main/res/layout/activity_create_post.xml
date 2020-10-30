@@ -1,123 +1,194 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+
+<!--    android:background="@drawable/feedb"-->
+<!--    tools:context=".CreatePostActivity">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageViewCancel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:padding="10dp"-->
+<!--        app:srcCompat="@drawable/ic_cancel_black_24dp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_toRightOf="@+id/imageViewCancel"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="Create a Blog Post"-->
+<!--        android:textColor="#222222"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold" -->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/TextViewAddDesc"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Add your Description"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:layout_below="@+id/imageViewCancel"-->
+<!--        />-->
+
+<!--    <ScrollView-->
+<!--        android:id="@+id/ScrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_below="@id/TextViewAddDesc"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical" >-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/EditTextBlogPost"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:background="@drawable/border_frame"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:gravity="start"-->
+<!--                android:inputType="textMultiLine"-->
+<!--                android:lineSpacingExtra="4sp"-->
+<!--                android:padding="10dp"-->
+<!--                android:textSize="18sp" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/TextViewAddImage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Add a Photo"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:layout_below="@+id/ScrollView"-->
+<!--        />-->
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="230dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_below="@id/TextViewAddImage"-->
+<!--        android:background="@drawable/border_frame"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ImageVIewAddPhoto"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_below="@id/TextViewAddImage"-->
+<!--        android:layout_margin="20dp"-->
+<!--        app:srcCompat="@drawable/uploadphoto" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/BtnPost"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ImageVIewAddPhoto"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="Post"-->
+<!--        android:background="@drawable/border_frame"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        />-->
+
+<!--</RelativeLayout>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="6dp">
 
-    android:background="@drawable/feedb"
-    tools:context=".CreatePostActivity">
-
-    <ImageView
-        android:id="@+id/imageViewCancel"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:padding="10dp"
-        app:srcCompat="@drawable/ic_cancel_black_24dp" />
+        android:text="close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_toRightOf="@+id/imageViewCancel"
-        android:fontFamily="monospace"
-        android:padding="5dp"
         android:text="Create a Blog Post"
-        android:textColor="#222222"
-        android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialButton"
+        app:layout_constraintTop_toTopOf="@+id/materialButton" />
 
-    <TextView
-        android:id="@+id/TextViewAddDesc"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add your Description"
-        android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:paddingStart="10dp"
-        android:layout_below="@+id/imageViewCancel"
-        />
-
-    <ScrollView
-        android:id="@+id/ScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_below="@id/TextViewAddDesc"
-        android:background="@android:color/white"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp">
-
+        android:layout_height="400dp"
+        android:layout_marginVertical="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton"
+        app:cardBackgroundColor="@color/cardlight"
+        app:cardCornerRadius="10dp"
+        >
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <EditText
-                android:id="@+id/EditTextBlogPost"
+            android:text="Add a Description:"
+            android:textSize="20dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:hint="Enter Description here..."/>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a Photo:"
+            android:textSize="20dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp">
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/border_frame"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="start"
-                android:inputType="textMultiLine"
-                android:lineSpacingExtra="4sp"
-                android:padding="10dp"
-                android:textSize="18sp" />
+                android:layout_height="100dp"
+
+                android:scaleType="fitCenter"/>
+        </androidx.cardview.widget.CardView>
         </LinearLayout>
-    </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
 
-    <TextView
-        android:id="@+id/TextViewAddImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add a Photo"
-        android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:paddingStart="10dp"
-        android:layout_below="@+id/ScrollView"
-        />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@id/TextViewAddImage"
-        android:background="@drawable/border_frame"
-        />
-
-    <ImageView
-        android:id="@+id/ImageVIewAddPhoto"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/TextViewAddImage"
-        android:layout_margin="20dp"
-        app:srcCompat="@drawable/uploadphoto" />
-
-    <Button
-        android:id="@+id/BtnPost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ImageVIewAddPhoto"
-        android:layout_marginTop="40dp"
-        android:text="Post"
-        android:background="@drawable/border_frame"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
