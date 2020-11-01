@@ -8,9 +8,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginVertical="10dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -19,33 +19,25 @@
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:textAlignment="center"
             android:textSize="18sp"
-            android:layout_margin="20dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="30dp"
             android:text="We just sent you a Verification Code on your Phone No.\n\nYou can enter the code manually or wait for the device to detect code automatically"
              />
 
-        <androidx.cardview.widget.CardView
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextVerificationCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginVertical="10dp"
-            app:cardUseCompatPadding="true"
-            app:contentPadding="5dp"
-            app:cardCornerRadius="5dp">
+            android:hint="Verification Code"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"/>
 
-
-            <EditText
-                android:id="@+id/editTextVerificationCode"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="15dp"
-                android:paddingVertical="15dp"
-                android:hint="Verification Code"/>
-
-        </androidx.cardview.widget.CardView>
-
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnVerifyPhoneNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,6 +47,7 @@
             android:backgroundTint="@color/colorPrimary"
             android:textColor="@android:color/white"
             android:textStyle="bold"
+            android:layout_marginTop="22dp"
             android:text="Verify"/>
 
         <ProgressBar

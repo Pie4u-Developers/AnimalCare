@@ -33,25 +33,25 @@
         <activity android:name="com.Pie4u.animalcare.RescueSignUpActivity" android:theme="@style/AppTheme"/>
         <activity
             android:name="com.Pie4u.animalcare.MainActivity"
-            android:theme="@style/splashTheme1" />
-        <activity android:name="com.Pie4u.animalcare.VolunteerHomeActivity" android:theme="@style/splashTheme1"/>
-        <activity android:name="com.Pie4u.animalcare.RescueActivity" android:theme="@style/splashTheme1"/>
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.Pie4u.animalcare.VolunteerHomeActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.Pie4u.animalcare.RescueActivity" android:theme="@style/AppTheme"/>
         <activity
             android:name="com.Pie4u.animalcare.AnimalRescueLoginActivity"
             android:theme="@style/AppTheme" />
         <activity android:name="com.Pie4u.animalcare.CreatePostActivity" />
-        <activity android:name="com.Pie4u.animalcare.HomeActivity" android:theme="@style/splashTheme1" />
+        <activity android:name="com.Pie4u.animalcare.HomeActivity" android:theme="@style/AppTheme" />
         <activity
             android:name="com.Pie4u.animalcare.Signup"
-            android:theme="@style/splashTheme1" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name="com.Pie4u.animalcare.profile"
-            android:theme="@style/splashTheme1" />
-        <activity android:name="com.Pie4u.animalcare.editprofile" android:theme="@style/splashTheme1" />
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.Pie4u.animalcare.editprofile" android:theme="@style/AppTheme" />
         <activity android:name="com.Pie4u.animalcare.ForgotPass" />
         <activity
             android:name="com.Pie4u.animalcare.splashscreen"
-            android:theme="@style/splashTheme1">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

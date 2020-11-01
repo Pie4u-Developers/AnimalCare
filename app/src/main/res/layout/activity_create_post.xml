@@ -30,7 +30,7 @@
 <!--        android:text="Create a Blog Post"-->
 <!--        android:textColor="#222222"-->
 <!--        android:textSize="22sp"-->
-<!--        android:textStyle="bold" -->
+<!--        android:textStyle="bold"-->
 <!--        />-->
 
 <!--    <TextView-->
@@ -126,11 +126,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="6dp">
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    tools:context=".CreatePostActivity">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/imageViewCancel"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -143,18 +144,18 @@
         android:layout_height="wrap_content"
         android:text="Create a Blog Post"
         android:textSize="26dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialButton"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCancel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/materialButton"
-        app:layout_constraintTop_toTopOf="@+id/materialButton" />
+        app:layout_constraintStart_toEndOf="@+id/imageViewCancel"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCancel" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="6dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCancel"
         app:cardBackgroundColor="@color/cardlight"
         app:cardCornerRadius="10dp"
         >
@@ -172,23 +173,35 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:inputType="textMultiLine"
+            android:id="@+id/EditTextBlogPost"
             android:hint="Enter Description here..."/>
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Add a Photo:"
             android:textSize="20dp"/>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:cardCornerRadius="10dp">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
 
-                android:scaleType="fitCenter"/>
-        </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/ImageVIewAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:background="@drawable/catup"/>
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            </androidx.cardview.widget.CardView>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:text="post"
+                android:id="@+id/BtnPost"/>
         </LinearLayout>
+
     </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

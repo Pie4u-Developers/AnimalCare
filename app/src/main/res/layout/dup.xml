@@ -1,129 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".VolunteerProfleFragment">
 
-    android:background="@drawable/feedb"
-    tools:context=".CreatePostActivity">
 
-    <ImageView
-        android:id="@+id/imageViewCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:padding="10dp"
-        app:srcCompat="@drawable/ic_cancel_black_24dp" />
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_toRightOf="@+id/imageViewCancel"
-        android:fontFamily="monospace"
-        android:padding="5dp"
-        android:text="Create a Blog Post"
-        android:textColor="#222222"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        />
+        android:layout_height="match_parent"
+        android:background="@drawable/feedb">
 
-    <TextView
-        android:id="@+id/TextViewAddDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add your Description"
-        android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:paddingStart="10dp"
-        android:layout_below="@+id/imageViewCancel"
-        />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewVolunteerPhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/dogprofile"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp" />
 
-    <ScrollView
-        android:id="@+id/ScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_below="@id/TextViewAddDesc"
-        android:background="@android:color/white"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textViewVolunteerName"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
 
-            <EditText
-                android:id="@+id/EditTextBlogPost"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/border_frame"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="start"
-                android:inputType="textMultiLine"
-                android:lineSpacingExtra="4sp"
-                android:padding="10dp"
-                android:textSize="18sp" />
-        </LinearLayout>
-    </ScrollView>
+            android:background="@drawable/new_border_frame"
+            android:ems="10"
+            android:layout_below="@id/imageViewVolunteerPhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Name"/>
 
-    <TextView
-        android:id="@+id/TextViewAddImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add a Photo"
-        android:textSize="18sp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:paddingStart="10dp"
-        android:layout_below="@+id/ScrollView"
-        />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@id/TextViewAddImage"
-        android:background="@drawable/border_frame"
-        />
+        <TextView
+            android:id="@+id/textViewVolunteerPhoneNo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewVolunteerName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_border_frame"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Phone No"/>
 
-    <ImageView
-        android:id="@+id/ImageVIewAddPhoto"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/TextViewAddImage"
-        android:layout_margin="20dp"
-        app:srcCompat="@drawable/uploadphoto" />
+        <TextView
+            android:id="@+id/textViewVolunteerOrganization"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewVolunteerPhoneNo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_border_frame"
+            android:ems="10"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Organization"/>
 
-    <Button
-        android:id="@+id/BtnPost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ImageVIewAddPhoto"
-        android:layout_marginTop="40dp"
-        android:text="Post"
-        android:background="@drawable/border_frame"
-        android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        />
+        <TextView
+            android:id="@+id/textViewVolunteerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewVolunteerOrganization"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_border_frame"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Email"/>
 
-</RelativeLayout>
-<!--<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="match_parent"-->
-<!--    android:layout_width="match_parent"-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android">-->
+        <Button
+            android:id="@+id/btnVolunteerLogout"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="Log Out"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bluebtn"
+            />
 
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        <Button
+            android:id="@+id/btnEditVolunteerProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewVolunteerEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bluebtn"
+            android:text="Edit Profile" />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
