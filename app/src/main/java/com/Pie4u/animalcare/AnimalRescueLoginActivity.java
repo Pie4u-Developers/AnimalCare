@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -69,7 +70,7 @@ public class AnimalRescueLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String phoneNo = volunteerPhoneNo.getText().toString();
                 //String password = passwordET.getText().toString();
-
+                volunteerPhoneNo.onEditorAction(EditorInfo.IME_ACTION_DONE);
                 if(TextUtils.isEmpty(phoneNo)){
                     volunteerPhoneNo.setError("Please enter your Phone No.");
                     return;

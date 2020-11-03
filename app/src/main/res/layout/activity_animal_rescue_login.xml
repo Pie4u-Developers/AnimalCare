@@ -1,44 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/rescback"
-    tools:context=".AnimalRescueLoginActivity">
 
-    <TextView
-        android:id="@+id/TextViewLoginRescue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="monospace"
-        android:gravity="center"
-        android:padding="20dp"
-        android:text="Rescue Login"
-        android:textColor="#FFFF"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="@color/cardview_light_background"-->
+<!--    tools:context=".AnimalRescueLoginActivity">-->
 
-    <EditText
-        android:id="@+id/EditTextRescueUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/btnback1"
-        android:layout_above="@id/BtnRescueLogin"
-        android:textAlignment="center"
-        android:layout_centerHorizontal="true"
-        android:hint="Volunteer Phone No."
-        android:inputType="phone"
-        android:padding="10dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/TextViewLoginRescue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="20dp"-->
+<!--        android:text="Rescue Login"-->
+<!--        android:textColor="@color/quantum_black_text"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold" />-->
 
-<!--    <EditText-->
+    <!--    <EditText-->
 <!--        android:id="@+id/EditTextRescuePassword"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
@@ -51,35 +36,127 @@
 <!--        android:padding="10dp"-->
 <!--        android:hint="Password" />-->
 
-    <Button
+<!--    <EditText-->
+<!--        android:id="@+id/EditTextRescueUsername"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/BtnRescueLogin"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        android:background="@drawable/btnback1"-->
+<!--        android:elevation="5dp"-->
+<!--        android:hint="Volunteer Phone No."-->
+<!--        android:inputType="phone"-->
+<!--        android:padding="10dp"-->
+<!--        android:textAlignment="center" />-->
+
+
+<!--    <Button-->
+<!--       -->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/textViewRescueSignUp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@drawable/limebtn"-->
+<!--        android:elevation="5dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Login"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/textViewRescueSignUp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="102dp"-->
+<!--        android:background="@drawable/limebtn"-->
+<!--        android:elevation="5dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:text="@string/register"-->
+<!--        android:textColor="#a2ef11"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold" />-->
+
+
+
+
+<!--</RelativeLayout>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalRescueLoginActivity"
+
+    >
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/textViewRescueSignUp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="REGISTER"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="@+id/EditTextRescueUsername"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextRescueUsername" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/BtnRescueLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
-        android:layout_above="@id/textViewRescueSignUp"
-        android:background="@drawable/limebtn"
-        android:layout_centerHorizontal="true"
-        android:padding="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="10dp"
         android:text="Login"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:textAllCaps="true"
-        android:textSize="18sp" />
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/EditTextRescueUsername"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextRescueUsername" />
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/EditTextRescueUsername"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="360dp"
+        tools:layout_editor_absoluteY="349dp" />
 
-
-    <TextView
-        android:id="@+id/textViewRescueSignUp"
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewRescueScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:padding="5dp"
-        android:text="@string/register"
-        android:textStyle="bold"
-        android:textColor="#a2ef11"
-        android:textSize="20sp" />
+        android:layout_marginTop="32dp"
+        android:text="Rescue Login🐾"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="casual"
+        />
 
-</RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/catAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="@+id/EditTextRescueUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/catanim"
+        android:paddingBottom="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

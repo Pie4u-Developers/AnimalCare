@@ -1,117 +1,312 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".RescueSignUpActivity"-->
+<!--    android:background="#FFFFFF"-->
+<!--    >-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewRescueVolunteerSignUp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:fontFamily="@font/aclonica"-->
+<!--        android:text="Rescue Volunteer Sign-Up"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="28sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#000000"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginVertical="20dp"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:layout_below="@id/textViewRescueVolunteerSignUp"-->
+<!--        android:elevation="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardUseCompatPadding="true"-->
+<!--       >-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginVertical="10dp"-->
+<!--            android:orientation="vertical">-->
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextVolunteerName"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:background="@drawable/new_border_frame"-->
+<!--                android:hint="Enter your name"-->
+<!--                android:padding="10dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextVolunteerPhone"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:inputType="phone"-->
+<!--                android:background="@drawable/new_border_frame"-->
+<!--                android:hint="Enter your phone no."-->
+<!--                android:padding="10dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextVolunteerEmail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:background="@drawable/new_border_frame"-->
+<!--                android:hint="Enter your email (optional)"-->
+<!--                android:padding="10dp" />-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spinnerOrganization"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"/>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextVolunteerOrgCode"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:text=""-->
+<!--                android:background="@drawable/new_border_frame"-->
+<!--                android:hint="Organization unique code"-->
+<!--                android:padding="10dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnVolunteerSignUp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_marginVertical="10dp"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:text="Create Account"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                android:paddingHorizontal="20dp"-->
+<!--                android:paddingVertical="15dp"-->
+<!--                android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"-->
+<!--                android:background="@drawable/bluebtn"-->
+<!--              />-->
+
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</RelativeLayout>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Signup">-->
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/Create"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Create New Account "-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/emailText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_below="@id/Create"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Enter Email"-->
+<!--        android:textAlignment="center"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:text=""-->
+<!--        android:background="@drawable/btnback1"-->
+<!--       />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/LoginPassword"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--       android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/emailText"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Enter Password"-->
+<!--        android:background="@drawable/btnback1"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:textAlignment="center"-->
+<!--         />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/motisignup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_below="@id/Signupbtn2"-->
+<!--        android:background="@drawable/moti" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Lets start with\ncreating an account"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_toEndOf="@id/motisignup"-->
+<!--        android:layout_below="@id/Signupbtn2"-->
+<!--        android:layout_marginTop="120dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--       />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Signupbtn2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/limebtn"-->
+<!--        android:text="signup"-->
+<!--        android:layout_marginTop="20dp"-->
+
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/LoginPassword"-->
+<!--        />-->
+<!--</RelativeLayout>-->
+
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RescueSignUpActivity"
-    android:background="#FFFFFF"
-    >
-
-    <TextView
-        android:id="@+id/textViewRescueVolunteerSignUp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/aclonica"
-        android:text="Rescue Volunteer Sign-Up"
-        android:textAlignment="center"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:cardBackgroundColor="@color/cardlight"
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_below="@id/textViewRescueVolunteerSignUp"
-        android:elevation="10dp"
-        app:cardCornerRadius="10dp"
-        app:cardUseCompatPadding="true"
-       >
-
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="20dp"
+        >
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-            <EditText
-                android:id="@+id/editTextVolunteerName"
-                android:layout_width="match_parent"
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
-                android:inputType="textPersonName"
-                android:background="@drawable/new_border_frame"
-                android:hint="Enter your name"
-                android:padding="10dp" />
+                android:text="Create a New Rescue Account"
+                android:textSize="26sp"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
 
-            <EditText
-                android:id="@+id/editTextVolunteerPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
-                android:inputType="phone"
-                android:background="@drawable/new_border_frame"
-                android:hint="Enter your phone no."
-                android:padding="10dp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Enter your Name"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/editTextVolunteerName"
+                    android:inputType="textEmailAddress"/>
 
-            <EditText
-                android:id="@+id/editTextVolunteerEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/new_border_frame"
-                android:hint="Enter your email (optional)"
-                android:padding="10dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextVolunteerPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Enter your Phone No."
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="phone"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextVolunteerEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Enter your Email (optional)"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="textEmailAddress"/>
+
 
             <Spinner
                 android:id="@+id/spinnerOrganization"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"/>
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"/>
 
-            <EditText
-                android:id="@+id/editTextVolunteerOrgCode"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
-                android:inputType="textEmailAddress"
-                android:text=""
-                android:background="@drawable/new_border_frame"
-                android:hint="Organization unique code"
-                android:padding="10dp" />
 
-            <Button
-                android:id="@+id/btnVolunteerSignUp"
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Enter your Organization Code"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:id="@+id/editTextVolunteerOrgCode"/>
+
+
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginVertical="10dp"
-                android:layout_gravity="center_horizontal"
-                android:text="Create Account"
-                android:textColor="@android:color/white"
-                android:textStyle="bold"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="15dp"
-                android:drawableEnd="@drawable/ic_baseline_arrow_forward_24"
-                android:background="@drawable/bluebtn"
-              />
-
-
+                android:text="Sign up"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/btnVolunteerSignUp"
+                android:layout_marginBottom="12dp"/>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="casual"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="''Let's start by creating an account''"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/catAnimation"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
 
-</RelativeLayout>
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/logindog"
+        android:layout_margin="24dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

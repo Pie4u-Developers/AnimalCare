@@ -145,7 +145,7 @@ public class editprofile extends AppCompatActivity {
             public void onClick(View view) {
 
                 progressDialog = new ProgressDialog(editprofile.this);
-                progressDialog.setMessage("Updating your profile, Please Wait :)");
+                progressDialog.setMessage("Updating Profile...");
                 progressDialog.setCancelable(false);
                 progressDialog.show();
 

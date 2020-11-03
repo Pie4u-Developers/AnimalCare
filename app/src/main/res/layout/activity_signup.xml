@@ -1,84 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Signup">-->
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/Create"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Create New Account "-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="26sp"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/emailText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_below="@id/Create"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Enter Email"-->
+<!--        android:textAlignment="center"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:text=""-->
+<!--        android:background="@drawable/btnback1"-->
+<!--       />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/LoginPassword"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--       android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/emailText"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Enter Password"-->
+<!--        android:background="@drawable/btnback1"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:textAlignment="center"-->
+<!--         />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/motisignup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_below="@id/Signupbtn2"-->
+<!--        android:background="@drawable/moti" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Lets start with\ncreating an account"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_toEndOf="@id/motisignup"-->
+<!--        android:layout_below="@id/Signupbtn2"-->
+<!--        android:layout_marginTop="120dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--       />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Signupbtn2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/limebtn"-->
+<!--        android:text="signup"-->
+<!--        android:layout_marginTop="20dp"-->
+
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/LoginPassword"-->
+<!--        />-->
+<!--</RelativeLayout>-->
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/grayback"
-    tools:context=".Signup">
-
-    <TextView
-        android:id="@+id/Create"
-        android:layout_width="wrap_content"
+    android:padding="12dp"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="Create New Account "
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        />
+        app:cardBackgroundColor="@color/cardlight"
 
-    <EditText
-        android:id="@+id/emailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_below="@id/Create"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:hint="Enter Email"
-        android:textAlignment="center"
-        android:inputType="textEmailAddress"
-        android:text=""
-        android:background="@drawable/btnback1"
-       />
-
-    <EditText
-        android:id="@+id/LoginPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:layout_centerHorizontal="true"
-        android:layout_below="@id/emailText"
+        app:cardCornerRadius="12dp"
         android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:background="@drawable/btnback1"
-        android:inputType="textPassword"
-        android:textAlignment="center"
-         />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/motisignup"
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create a New Account"
+                android:textSize="26sp"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Enter your Email"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/emailText"
+                android:inputType="textEmailAddress"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LoginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Enter your Password"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="textPassword"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:layout_gravity="center"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:id="@+id/Signupbtn2"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
-        android:layout_below="@id/Signupbtn2"
-        android:background="@drawable/moti" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="casual"
+        android:textSize="24dp"
+        android:layout_marginHorizontal="12dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="''Let's start by creating an account''"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/catAnimation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lets start with\ncreating an account"
-        android:textSize="20sp"
-        android:layout_toEndOf="@id/motisignup"
-        android:layout_below="@id/Signupbtn2"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="20dp"
-       />
-
-    <Button
-        android:id="@+id/Signupbtn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/limebtn"
-        android:text="signup"
-        android:layout_marginTop="20dp"
-
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/LoginPassword"
-        />
-</RelativeLayout>
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/logindog"
+        android:layout_margin="24dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

@@ -3,7 +3,8 @@
 
     <item
         android:title="Profile"
-        android:id="@+id/ItemProfile"/>
+        android:id="@+id/ItemProfile"
+        />
     <item
         android:title="Log out"
         android:id="@+id/ItemLogout"/>

@@ -42,8 +42,8 @@ import java.util.Date;
 
 public class CreatePostActivity extends AppCompatActivity {
 
-    ImageView cancelImageView,addAnimalPhoto;
-    Button postBtn;
+    ImageView addAnimalPhoto;
+    Button postBtn,cancelImageView;
     Bitmap animalBitmap;
     EditText addDescriptionET;
     private Uri imageUri;

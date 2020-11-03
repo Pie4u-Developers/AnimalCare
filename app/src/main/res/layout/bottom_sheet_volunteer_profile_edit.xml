@@ -1,49 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingHorizontal="10dp"
-    android:paddingBottom="30dp"
-    android:paddingTop="10dp"
+    android:padding="3dp"
     android:id="@+id/linearLayoutBottomSheetProfileContainer">
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/cardlight"
+    app:cardCornerRadius="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="6dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="#EEE2D0"
+            app:civ_border_width="2dp"
+            android:src="@drawable/dogprofile"
+            android:id="@+id/imageViewEditVolunteerImage"
+            />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageViewEditVolunteerImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginHorizontal="20dp"
-        android:src="@drawable/dogprofile"
-        app:civ_border_color="#000000"
-        app:civ_border_width="2dp" />
-
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextEditVolunteerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp"
         android:inputType="textPersonName"
-        android:background="@drawable/new_border_frame"
         android:hint="Enter your name"
         android:padding="10dp" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextEditVolunteerEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp"
         android:inputType="textEmailAddress"
-        android:background="@drawable/new_border_frame"
+
         android:hint="Enter your email (optional)"
         android:padding="10dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnUpdateVolunteerProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,8 +58,8 @@
         android:layout_gravity="center_horizontal"
         android:text="Update Profile"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
-        android:backgroundTint="@color/colorPrimary"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:textAllCaps="false"/>
-
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
 </LinearLayout>
