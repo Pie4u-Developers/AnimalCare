@@ -124,7 +124,7 @@ public class VolunteerProfleFragment extends Fragment implements View.OnClickLis
         progressDialog = new ProgressDialog(myView.getContext());
         btnVolunteerLogout = view.findViewById(R.id.btnVolunteerLogout);
         btnEditVolunteerProfile = view.findViewById(R.id.btnEditVolunteerProfile);
-        imageViewVolunteerPhoto = view.findViewById(R.id.imageViewVolunteerPhoto);
+        imageViewVolunteerPhoto = view.findViewById(R.id.profileI);
         textViewVolunteerEmail = view.findViewById(R.id.textViewVolunteerEmail);
         textViewVolunteerPhoneNo = view.findViewById(R.id.textViewVolunteerPhoneNo);
         textViewVolunteerName = view.findViewById(R.id.textViewVolunteerName);
